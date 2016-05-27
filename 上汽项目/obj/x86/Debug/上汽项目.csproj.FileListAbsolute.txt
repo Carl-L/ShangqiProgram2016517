@@ -1,0 +1,173 @@
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\上汽项目.exe.config
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\上汽项目.exe
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\上汽项目.pdb
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.DDF.dll
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.dll
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.HPSF.dll
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.HSSF.dll
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.POIFS.dll
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.Util.dll
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.xml
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.DDF.xml
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.HPSF.xml
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.HSSF.xml
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.POIFS.xml
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\bin\Debug\NPOI.Util.xml
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\obj\x86\Debug\上汽项目.Form1.resources
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\obj\x86\Debug\上汽项目.exe
+D:\用户目录\我的文档\Visual Studio 2010\Projects\Ado_netPractise\上汽项目\obj\x86\Debug\上汽项目.pdb
+I:\上汽项目资料\上汽项目\上汽项目\bin\Debug\上汽项目.exe.config
+I:\上汽项目资料\上汽项目\上汽项目\obj\x86\Debug\上汽项目.exe
+I:\上汽项目资料\上汽项目\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\上汽项目.exe.config
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\obj\x86\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.DDF.dll
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.HPSF.dll
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.HSSF.dll
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.POIFS.dll
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.Util.dll
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.xml
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.DDF.xml
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.HPSF.xml
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.HSSF.xml
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.POIFS.xml
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\bin\Debug\NPOI.Util.xml
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\obj\x86\Debug\上汽项目.Form1.resources
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\shangqi program\上汽项目\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\上汽项目.exe.config
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\obj\x86\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.DDF.dll
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.HPSF.dll
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.HSSF.dll
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.POIFS.dll
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.Util.dll
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.xml
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.DDF.xml
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.HPSF.xml
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.HSSF.xml
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.POIFS.xml
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\bin\Debug\NPOI.Util.xml
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\obj\x86\Debug\上汽项目.Form1.resources
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\shangqi program改进中文搜索\上汽项目\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\上汽项目.exe.config
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.DDF.dll
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.HPSF.dll
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.HSSF.dll
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.POIFS.dll
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.Util.dll
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.xml
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.DDF.xml
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.HPSF.xml
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.HSSF.xml
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.POIFS.xml
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.Util.xml
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.FormLogin.resources
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.FormMain.resources
+C:\Users\Administrator\Desktop\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.FormChangePassword.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\上汽项目.exe.config
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.OOXML.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\bin\Debug\NPOI.OpenXml4Net.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.FormChangePassword.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.FormLogin.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.FormMain.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\C# program\shangqi program加入车辆类型\上汽项目\obj\x86\Debug\上汽项目.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\上汽项目.exe.config
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\obj\x86\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\NPOI.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\NPOI.OOXML.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\bin\Debug\NPOI.OpenXml4Net.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\obj\x86\Debug\上汽项目.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\obj\x86\Debug\上汽项目.FormChangePassword.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\obj\x86\Debug\上汽项目.FormLogin.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\obj\x86\Debug\上汽项目.FormMain.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program20160511\上汽项目\obj\x86\Debug\上汽项目.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\上汽项目.exe.config
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OOXML.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OpenXml4Net.xml
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.FormChangePassword.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.FormLogin.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.FormMain.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+C:\Users\Administrator\Desktop\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\上汽项目.exe.config
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\上汽项目.exe
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\上汽项目.pdb
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.xml
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OOXML.xml
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\bin\Debug\NPOI.OpenXml4Net.xml
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.FormChangePassword.resources
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.FormLogin.resources
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.FormMain.resources
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+C:\Users\Administrator\Desktop\桌面\C# program\shangqi program当前版本\上汽项目\obj\x86\Debug\上汽项目.csproj.GenerateResource.Cache

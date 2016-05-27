@@ -1,0 +1,13 @@
+select TABLE_NAME from INFORMATION_SCHEMA.TABLES 
+
+select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='''01环境和一般事故数据$'''
+
+select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='User'
+
+select * from sys.columns
+
+select * from sys.tables 
+
+select [(AQCSPJ2)安全措施的评价2]  from ['01环境和一般事故数据$']
+
+select ['01环境和一般事故数据$'].[(AQCSPJ2)安全措施的评价2], ['02车辆数据$'].[(CLLX1)车辆类型自定义] from ['01环境和一般事故数据$'] inner join ['02车辆数据$'] on ['01环境和一般事故数据$'].[(SGDABH)案例编号]=['02车辆数据$'].[(SGDABH)案例编号] where ['02车辆数据$'].[(CLLX1)车辆类型自定义]=3 or ['02车辆数据$'].[(CLLX1)车辆类型自定义]=4

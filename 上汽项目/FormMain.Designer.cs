@@ -115,7 +115,7 @@
             // lblSearchType
             // 
             this.lblSearchType.AutoSize = true;
-            this.lblSearchType.Location = new System.Drawing.Point(25, 134);
+            this.lblSearchType.Location = new System.Drawing.Point(25, 119);
             this.lblSearchType.Name = "lblSearchType";
             this.lblSearchType.Size = new System.Drawing.Size(65, 12);
             this.lblSearchType.TabIndex = 13;
@@ -123,7 +123,7 @@
             // 
             // txtSearchType
             // 
-            this.txtSearchType.Location = new System.Drawing.Point(97, 181);
+            this.txtSearchType.Location = new System.Drawing.Point(97, 161);
             this.txtSearchType.Name = "txtSearchType";
             this.txtSearchType.Size = new System.Drawing.Size(156, 21);
             this.txtSearchType.TabIndex = 14;
@@ -131,7 +131,7 @@
             // cboSearchType
             // 
             this.cboSearchType.FormattingEnabled = true;
-            this.cboSearchType.Location = new System.Drawing.Point(97, 131);
+            this.cboSearchType.Location = new System.Drawing.Point(97, 116);
             this.cboSearchType.Name = "cboSearchType";
             this.cboSearchType.Size = new System.Drawing.Size(156, 20);
             this.cboSearchType.TabIndex = 15;
@@ -139,7 +139,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 184);
+            this.label4.Location = new System.Drawing.Point(25, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 16;
@@ -158,7 +158,7 @@
             // lblAccidentType
             // 
             this.lblAccidentType.AutoSize = true;
-            this.lblAccidentType.Location = new System.Drawing.Point(29, 86);
+            this.lblAccidentType.Location = new System.Drawing.Point(29, 78);
             this.lblAccidentType.Name = "lblAccidentType";
             this.lblAccidentType.Size = new System.Drawing.Size(65, 12);
             this.lblAccidentType.TabIndex = 23;
@@ -167,7 +167,7 @@
             // cboAccidentType
             // 
             this.cboAccidentType.FormattingEnabled = true;
-            this.cboAccidentType.Location = new System.Drawing.Point(97, 82);
+            this.cboAccidentType.Location = new System.Drawing.Point(97, 74);
             this.cboAccidentType.Name = "cboAccidentType";
             this.cboAccidentType.Size = new System.Drawing.Size(156, 20);
             this.cboAccidentType.TabIndex = 22;

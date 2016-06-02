@@ -20,8 +20,9 @@ namespace 上汽项目
     {
         private string[] searchType = { "单值查询", "多值查询", "范围查询" };
         private string[] accidentType = { "1仅乘用车", "2仅货车", "3仅客车", "4乘用车+货车", "5乘用车+客车", "6客车+货车", "7所有车型"};
+        private string[] crashType = { "All", "A类=追尾事故被碰撞方", "B类=追尾事故碰撞方", "C类=无法比较的案例" };
         //private string tableSelected = "['01环境和一般事故数据$']";
-        private string accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where ['02车辆数据$'].[(SGDABH)案例编号] in (select [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型]=0 or [(CLLX4)C车辆类型]=1 or [(CLLX4)C车辆类型]=2 or [(CLLX4)C车辆类型]=3 or [(CLLX4)C车辆类型]=4 or [(CLLX4)C车辆类型]=5 or [(CLLX4)C车辆类型]=6 or [(CLLX4)C车辆类型]=9) and ([(CLLX4)C车辆类型]=21 or [(CLLX4)C车辆类型]=22 or [(CLLX4)C车辆类型]=23 or [(CLLX4)C车辆类型]=98)";
+        private string accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where ([(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9)) and ([(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17, 8,10,11,12)))";
         private List<string> Data = new List<string>();
         private List<string> list_cboField = new List<string>();
         private List<string> listNew_cboField = new List<string>();
@@ -451,32 +452,32 @@ namespace 上汽项目
             {
                 // 仅乘用车 0,1,2,3,4,5,6,9
                 //accTypeStr = "select * from ['02车辆数据$'] where ['02车辆数据$'].[(SGDABH)案例编号] in (select [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型]=0 or [(CLLX4)C车辆类型]=1 or [(CLLX4)C车辆类型]=2 or [(CLLX4)C车辆类型]=3 or [(CLLX4)C车辆类型]=4 or [(CLLX4)C车辆类型]=5 or [(CLLX4)C车辆类型]=6 or [(CLLX4)C车辆类型]=9) and ([(CLLX4)C车辆类型]=21 or [(CLLX4)C车辆类型]=22 or [(CLLX4)C车辆类型]=23 or [(CLLX4)C车辆类型]=98)";
-                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9) and [(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17, 8,10,11,12))";
+                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where ([(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9)) and ([(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17, 8,10,11,12)))";
             }
             else if (accType == accidentType[1])
             {
                 // 仅货车7,14,15,16,17
-                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17) and [(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9, 8,10,11,12))";
+                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where ([(CLLX4)C车辆类型] in (7,14,15,16,17)) and ([(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9, 8,10,11,12)))";
             }
             else if (accType == accidentType[2])
             {
                 // 仅客车8,10,11,12
-                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (8,10,11,12) and [(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9, 7,14,15,16,17))";
+                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where ([(CLLX4)C车辆类型] in (8,10,11,12)) and ([(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9, 7,14,15,16,17)))";
             }
             else if (accType == accidentType[3])
             {
                 // 乘用车+货车
-                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9) and [(SGDABH)案例编号] in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17)) and [(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (8,10,11,12))";
+                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where ([(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9)) and ([(SGDABH)案例编号] in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17))) and ([(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (8,10,11,12)))";
             }
             else if (accType == accidentType[4])
             {
                 // 乘用车+客车
-                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9) and [(SGDABH)案例编号] in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (8,10,11,12)) and [(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17))";
+                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where ([(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9)) and ([(SGDABH)案例编号] in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (8,10,11,12))) and ([(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17)))";
             }
             else if (accType == accidentType[5])
             {
                 // 货车+客车
-                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (7,14,15,16,17) and [(SGDABH)案例编号] in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (8,10,11,12)) and [(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9))";
+                accTypeStr = "select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where ([(CLLX4)C车辆类型] in (7,14,15,16,17)) and ([(SGDABH)案例编号] in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (8,10,11,12))) and ([(SGDABH)案例编号] not in (select distinct [(SGDABH)案例编号] from ['02车辆数据$'] where [(CLLX4)C车辆类型] in (0,1,2,3,4,5,6,9)))";
             }
             else// if (accType == accidentType[6])
             {
@@ -654,7 +655,7 @@ namespace 上汽项目
         {
             DateTime dateTime = DateTime.Now;
             DataTable dt = dgvCars.DataSource as DataTable;
-            string fileName = "./result" + dateTime.ToFileTime().ToString() + ".xlsx";
+            string fileName = "../../../导出数据/result" + dateTime.ToFileTime().ToString() + ".xlsx";
             TableToExcelForXLSX(dt, fileName);
             MessageBox.Show("Excel导出成功");
         }
@@ -1057,7 +1058,7 @@ namespace 上汽项目
                 //MessageBox.Show(cfd_index.ToString());
                 string cfd_item = cboForDisplay.SelectedItem.ToString();
                 int cfd_index = list_cboForDisplay.IndexOf(cfd_item);
-                MessageBox.Show(cfd_index.ToString());
+                MessageBox.Show(cfd_item+" 已选中");
                 if (cfd_index == -1)
                 {
                     clbColumnForDisplay.SetItemChecked(0, true);

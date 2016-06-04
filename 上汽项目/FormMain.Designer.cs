@@ -69,6 +69,7 @@
             this.btnOutputRY = new System.Windows.Forms.Button();
             this.btnInputCYF = new System.Windows.Forms.Button();
             this.btnOutputCYF = new System.Windows.Forms.Button();
+            this.btnAccidentType = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataDistribution)).BeginInit();
             this.SuspendLayout();
@@ -245,7 +246,7 @@
             // 
             // btnDownload
             // 
-            this.btnDownload.Location = new System.Drawing.Point(993, 187);
+            this.btnDownload.Location = new System.Drawing.Point(1054, 187);
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Size = new System.Drawing.Size(116, 43);
             this.btnDownload.TabIndex = 43;
@@ -452,11 +453,22 @@
             this.btnOutputCYF.UseVisualStyleBackColor = true;
             this.btnOutputCYF.Click += new System.EventHandler(this.btnOutputCYF_Click);
             // 
+            // btnAccidentType
+            // 
+            this.btnAccidentType.Location = new System.Drawing.Point(925, 187);
+            this.btnAccidentType.Name = "btnAccidentType";
+            this.btnAccidentType.Size = new System.Drawing.Size(116, 43);
+            this.btnAccidentType.TabIndex = 72;
+            this.btnAccidentType.Text = "生成事故类型";
+            this.btnAccidentType.UseVisualStyleBackColor = true;
+            this.btnAccidentType.Click += new System.EventHandler(this.btnAccidentType_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1198, 654);
+            this.Controls.Add(this.btnAccidentType);
             this.Controls.Add(this.btnOutputCYF);
             this.Controls.Add(this.btnInputCYF);
             this.Controls.Add(this.btnInputRY);
@@ -551,6 +563,7 @@
         private System.Windows.Forms.Button btnOutputRY;
         private System.Windows.Forms.Button btnInputCYF;
         private System.Windows.Forms.Button btnOutputCYF;
+        private System.Windows.Forms.Button btnAccidentType;
     }
 }
 

@@ -1160,6 +1160,39 @@ namespace 上汽项目
         } 
         #endregion
 
+        #region 在表20中生成事故类型
+        private void btnAccidentType_Click(object sender, EventArgs e)
+        {
+            String sqlStr1 = "ALTER TABLE ['20单个事件的重建数据$'] DROP COLUMN [(PZLX)碰撞类型]";
+            String sqlStr2 = "ALTER TABLE ['20单个事件的重建数据$'] ADD [(PZLX)碰撞类型] nvarchar(255)";
+            String sqlStr = "UPDATE ['20单个事件的重建数据$'] set ['20单个事件的重建数据$'].[(PZLX)碰撞类型]=" +
+            "(SELECT " +
+                "[(PZLX)碰撞类型]=CASE WHEN Max速度=999 THEN 'C' WHEN Max速度=Min速度 THEN 'D' " +
+                "WHEN [(CSSD2)初始速度]=Max速度 THEN 'B' WHEN [(CSSD2)初始速度]=Min速度 THEN 'A' END " +
+            "FROM " +
+                "(SELECT DISTINCT " +
+                "[(SGDABH)案例编号] " +
+                ",[(CYFBH)参与方编号] " +
+                ",[(CSSD2)初始速度] " +
+                ",MAX(ISNULL([(CSSD2)初始速度],999))OVER(PARTITION BY [(SGDABH)案例编号]) AS Max速度 " +
+                ",Min(ISNULL([(CSSD2)初始速度],999))OVER(PARTITION BY [(SGDABH)案例编号]) AS Min速度 " +
+                "FROM ['20单个事件的重建数据$']) AS T " +
+                "WHERE ['20单个事件的重建数据$'].[(CYFBH)参与方编号]=T.[(CYFBH)参与方编号] " +
+                "AND ['20单个事件的重建数据$'].[(CSSD2)初始速度]=T.[(CSSD2)初始速度] " +
+                "AND ['20单个事件的重建数据$'].[(SGDABH)案例编号]=T.[(SGDABH)案例编号]) ";
+            DataTable dt = SqlHelper.ExecuteDataTable("select COLUMN_NAME from information_schema.columns where table_name='''20单个事件的重建数据$''' and COLUMN_NAME = '(PZLX)碰撞类型'");
+            MessageBox.Show(dt.Rows.Count.ToString());
+            if (dt.Rows.Count != 0)
+            {
+                SqlHelper.ExecuteNonQuery(sqlStr1);
+            }
+
+            SqlHelper.ExecuteNonQuery(sqlStr2);
+            dt = SqlHelper.ExecuteDataTable(sqlStr);
+            MessageBox.Show("碰撞类型生成成功！");
+        } 
+        #endregion
+
 
     }
 }

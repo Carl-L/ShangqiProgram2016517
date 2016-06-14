@@ -1160,14 +1160,14 @@ namespace 上汽项目
         } 
         #endregion
 
-        #region 在表20中生成事故类型
+        #region 在表20中生成追尾事故类型&侧碰事故类型
         private void btnAccidentType_Click(object sender, EventArgs e)
         {
-            String sqlStr1 = "ALTER TABLE ['20单个事件的重建数据$'] DROP COLUMN [(PZLX)碰撞类型]";
-            String sqlStr2 = "ALTER TABLE ['20单个事件的重建数据$'] ADD [(PZLX)碰撞类型] nvarchar(255)";
-            String sqlStr = "UPDATE ['20单个事件的重建数据$'] set ['20单个事件的重建数据$'].[(PZLX)碰撞类型]=" +
+            String sqlStr1 = "ALTER TABLE ['20单个事件的重建数据$'] DROP COLUMN [(ZWSGLX)追尾事故类型]"; // 碰撞类型 改为 追尾事故类型
+            String sqlStr2 = "ALTER TABLE ['20单个事件的重建数据$'] ADD [(ZWSGLX)追尾事故类型] nvarchar(255)";
+            String sqlStr = "UPDATE ['20单个事件的重建数据$'] set ['20单个事件的重建数据$'].[(ZWSGLX)追尾事故类型]=" +
             "(SELECT " +
-                "[(PZLX)碰撞类型]=CASE WHEN Max速度=999 THEN 'C' WHEN Max速度=Min速度 THEN 'D' " +
+                "[(ZWSGLX)追尾事故类型]=CASE WHEN Max速度=999 THEN 'C' WHEN Max速度=Min速度 THEN 'D' " +
                 "WHEN [(CSSD2)初始速度]=Max速度 THEN 'B' WHEN [(CSSD2)初始速度]=Min速度 THEN 'A' END " +
             "FROM " +
                 "(SELECT DISTINCT " +
@@ -1180,8 +1180,8 @@ namespace 上汽项目
                 "WHERE ['20单个事件的重建数据$'].[(CYFBH)参与方编号]=T.[(CYFBH)参与方编号] " +
                 "AND ['20单个事件的重建数据$'].[(CSSD2)初始速度]=T.[(CSSD2)初始速度] " +
                 "AND ['20单个事件的重建数据$'].[(SGDABH)案例编号]=T.[(SGDABH)案例编号]) ";
-            DataTable dt = SqlHelper.ExecuteDataTable("select COLUMN_NAME from information_schema.columns where table_name='''20单个事件的重建数据$''' and COLUMN_NAME = '(PZLX)碰撞类型'");
-            MessageBox.Show(dt.Rows.Count.ToString());
+            DataTable dt = SqlHelper.ExecuteDataTable("select COLUMN_NAME from information_schema.columns where table_name='''20单个事件的重建数据$''' and COLUMN_NAME = '(ZWSGLX)追尾事故类型'");
+            // MessageBox.Show(dt.Rows.Count.ToString());
             if (dt.Rows.Count != 0)
             {
                 SqlHelper.ExecuteNonQuery(sqlStr1);
@@ -1189,7 +1189,45 @@ namespace 上汽项目
 
             SqlHelper.ExecuteNonQuery(sqlStr2);
             dt = SqlHelper.ExecuteDataTable(sqlStr);
-            MessageBox.Show("碰撞类型生成成功！");
+            MessageBox.Show("追尾事故类型生成成功！");
+
+            sqlStr = "ALTER TABLE ['20单个事件的重建数据$'] DROP COLUMN [(CPSGLX)侧碰事故类型]";
+            dt = SqlHelper.ExecuteDataTable("select COLUMN_NAME from information_schema.columns where table_name='''20单个事件的重建数据$''' and COLUMN_NAME = '(CPSGLX)侧碰事故类型'");
+            // MessageBox.Show(dt.Rows.Count.ToString());
+            if (dt.Rows.Count != 0)
+            {
+                SqlHelper.ExecuteNonQuery(sqlStr);
+            }
+
+            sqlStr = "ALTER TABLE ['20单个事件的重建数据$'] ADD [(CPSGLX)侧碰事故类型] nvarchar(255)";
+            SqlHelper.ExecuteNonQuery(sqlStr);
+
+            sqlStr = "UPDATE ['20单个事件的重建数据$'] set ['20单个事件的重建数据$'].[(CPSGLX)侧碰事故类型]=" +
+            "(SELECT " +
+                "[(CPSGLX)侧碰事故类型]=CASE WHEN MaxVDI=93 THEN 'C' WHEN MaxVDI=MinVDI THEN 'D' WHEN [VDI减六后的绝对值] " +
+                "=MaxVDI THEN 'B' WHEN [VDI减六后的绝对值]=MinVDI THEN 'A' END " +
+            "FROM " +
+                "(SELECT DISTINCT " +
+                "[(SGDABH)案例编号] " +
+                ",[(CYFBH)参与方编号] " +
+                ",[(VDI_FX)VDI1方向] " +
+                ",[VDI减六后的绝对值] " +
+                ",MAX(ISNULL([VDI减六后的绝对值],93))OVER(PARTITION BY [(SGDABH)案例编号]) AS MaxVDI " +
+                ",Min(ISNULL([VDI减六后的绝对值],93))OVER(PARTITION BY [(SGDABH)案例编号]) AS MinVDI " +
+            "FROM " +
+                "(SELECT " +
+                "[(SGDABH)案例编号] " +
+                ",[(CYFBH)参与方编号] " +
+                ",[(VDI_FX)VDI1方向] " +
+                ",ABS([(VDI_FX)VDI1方向]-6) AS [VDI减六后的绝对值] " +
+                "FROM ['20单个事件的重建数据$'] " +
+                ") AS b " +
+                ") AS T " +
+            "WHERE ['20单个事件的重建数据$'].[(CYFBH)参与方编号]=T.[(CYFBH)参与方编号] " +
+                "AND ['20单个事件的重建数据$'].[(VDI_FX)VDI1方向]=T.[(VDI_FX)VDI1方向] " +
+                "AND ['20单个事件的重建数据$'].[(SGDABH)案例编号]=T.[(SGDABH)案例编号]) ";
+            dt = SqlHelper.ExecuteDataTable(sqlStr);
+            MessageBox.Show("侧碰事故类型生成成功！");
         } 
         #endregion
 

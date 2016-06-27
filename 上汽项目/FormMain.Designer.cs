@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvCars = new System.Windows.Forms.DataGridView();
             this.clbConditions = new System.Windows.Forms.CheckedListBox();
@@ -70,13 +71,26 @@
             this.btnInputCYF = new System.Windows.Forms.Button();
             this.btnOutputCYF = new System.Windows.Forms.Button();
             this.btnAccidentType = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataDistribution)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(287, 109);
+            this.btnSearch.Location = new System.Drawing.Point(255, 53);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(104, 42);
             this.btnSearch.TabIndex = 0;
@@ -87,7 +101,7 @@
             // dgvCars
             // 
             this.dgvCars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCars.Location = new System.Drawing.Point(288, 245);
+            this.dgvCars.Location = new System.Drawing.Point(8, 20);
             this.dgvCars.Name = "dgvCars";
             this.dgvCars.RowTemplate.Height = 23;
             this.dgvCars.Size = new System.Drawing.Size(687, 362);
@@ -98,14 +112,14 @@
             // 
             this.clbConditions.FormattingEnabled = true;
             this.clbConditions.HorizontalScrollbar = true;
-            this.clbConditions.Location = new System.Drawing.Point(408, 50);
+            this.clbConditions.Location = new System.Drawing.Point(6, 34);
             this.clbConditions.Name = "clbConditions";
-            this.clbConditions.Size = new System.Drawing.Size(500, 180);
+            this.clbConditions.Size = new System.Drawing.Size(567, 180);
             this.clbConditions.TabIndex = 10;
             // 
             // btnAddCondition
             // 
-            this.btnAddCondition.Location = new System.Drawing.Point(287, 61);
+            this.btnAddCondition.Location = new System.Drawing.Point(255, 7);
             this.btnAddCondition.Name = "btnAddCondition";
             this.btnAddCondition.Size = new System.Drawing.Size(104, 32);
             this.btnAddCondition.TabIndex = 11;
@@ -116,7 +130,7 @@
             // lblSearchType
             // 
             this.lblSearchType.AutoSize = true;
-            this.lblSearchType.Location = new System.Drawing.Point(25, 119);
+            this.lblSearchType.Location = new System.Drawing.Point(6, 98);
             this.lblSearchType.Name = "lblSearchType";
             this.lblSearchType.Size = new System.Drawing.Size(65, 12);
             this.lblSearchType.TabIndex = 13;
@@ -124,7 +138,7 @@
             // 
             // txtSearchType
             // 
-            this.txtSearchType.Location = new System.Drawing.Point(97, 161);
+            this.txtSearchType.Location = new System.Drawing.Point(80, 140);
             this.txtSearchType.Name = "txtSearchType";
             this.txtSearchType.Size = new System.Drawing.Size(156, 21);
             this.txtSearchType.TabIndex = 14;
@@ -132,7 +146,7 @@
             // cboSearchType
             // 
             this.cboSearchType.FormattingEnabled = true;
-            this.cboSearchType.Location = new System.Drawing.Point(97, 116);
+            this.cboSearchType.Location = new System.Drawing.Point(80, 95);
             this.cboSearchType.Name = "cboSearchType";
             this.cboSearchType.Size = new System.Drawing.Size(156, 20);
             this.cboSearchType.TabIndex = 15;
@@ -140,7 +154,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 164);
+            this.label4.Location = new System.Drawing.Point(6, 143);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 16;
@@ -148,9 +162,9 @@
             // 
             // btnMulti
             // 
-            this.btnMulti.Location = new System.Drawing.Point(287, 167);
+            this.btnMulti.Location = new System.Drawing.Point(255, 109);
             this.btnMulti.Name = "btnMulti";
-            this.btnMulti.Size = new System.Drawing.Size(104, 55);
+            this.btnMulti.Size = new System.Drawing.Size(104, 52);
             this.btnMulti.TabIndex = 17;
             this.btnMulti.Text = "多条件搜索";
             this.btnMulti.UseVisualStyleBackColor = true;
@@ -159,7 +173,7 @@
             // lblAccidentType
             // 
             this.lblAccidentType.AutoSize = true;
-            this.lblAccidentType.Location = new System.Drawing.Point(29, 78);
+            this.lblAccidentType.Location = new System.Drawing.Point(6, 53);
             this.lblAccidentType.Name = "lblAccidentType";
             this.lblAccidentType.Size = new System.Drawing.Size(65, 12);
             this.lblAccidentType.TabIndex = 23;
@@ -168,7 +182,7 @@
             // cboAccidentType
             // 
             this.cboAccidentType.FormattingEnabled = true;
-            this.cboAccidentType.Location = new System.Drawing.Point(97, 74);
+            this.cboAccidentType.Location = new System.Drawing.Point(80, 53);
             this.cboAccidentType.Name = "cboAccidentType";
             this.cboAccidentType.Size = new System.Drawing.Size(156, 20);
             this.cboAccidentType.TabIndex = 22;
@@ -178,7 +192,7 @@
             // lblCondition
             // 
             this.lblCondition.AutoSize = true;
-            this.lblCondition.Location = new System.Drawing.Point(408, 26);
+            this.lblCondition.Location = new System.Drawing.Point(19, 12);
             this.lblCondition.Name = "lblCondition";
             this.lblCondition.Size = new System.Drawing.Size(89, 12);
             this.lblCondition.TabIndex = 29;
@@ -186,7 +200,7 @@
             // 
             // btnClearConditions
             // 
-            this.btnClearConditions.Location = new System.Drawing.Point(573, 22);
+            this.btnClearConditions.Location = new System.Drawing.Point(184, 8);
             this.btnClearConditions.Name = "btnClearConditions";
             this.btnClearConditions.Size = new System.Drawing.Size(53, 23);
             this.btnClearConditions.TabIndex = 34;
@@ -197,7 +211,7 @@
             // cbSelectAllConditions
             // 
             this.cbSelectAllConditions.AutoSize = true;
-            this.cbSelectAllConditions.Location = new System.Drawing.Point(503, 25);
+            this.cbSelectAllConditions.Location = new System.Drawing.Point(114, 11);
             this.cbSelectAllConditions.Name = "cbSelectAllConditions";
             this.cbSelectAllConditions.Size = new System.Drawing.Size(54, 16);
             this.cbSelectAllConditions.TabIndex = 36;
@@ -207,7 +221,7 @@
             // 
             // btnDeleteCondition
             // 
-            this.btnDeleteCondition.Location = new System.Drawing.Point(642, 22);
+            this.btnDeleteCondition.Location = new System.Drawing.Point(253, 8);
             this.btnDeleteCondition.Name = "btnDeleteCondition";
             this.btnDeleteCondition.Size = new System.Drawing.Size(53, 23);
             this.btnDeleteCondition.TabIndex = 37;
@@ -218,7 +232,7 @@
             // cbSelectAllColumns
             // 
             this.cbSelectAllColumns.AutoSize = true;
-            this.cbSelectAllColumns.Location = new System.Drawing.Point(146, 294);
+            this.cbSelectAllColumns.Location = new System.Drawing.Point(125, 47);
             this.cbSelectAllColumns.Name = "cbSelectAllColumns";
             this.cbSelectAllColumns.Size = new System.Drawing.Size(54, 16);
             this.cbSelectAllColumns.TabIndex = 40;
@@ -229,7 +243,7 @@
             // lblColumnForDisplay
             // 
             this.lblColumnForDisplay.AutoSize = true;
-            this.lblColumnForDisplay.Location = new System.Drawing.Point(27, 295);
+            this.lblColumnForDisplay.Location = new System.Drawing.Point(6, 48);
             this.lblColumnForDisplay.Name = "lblColumnForDisplay";
             this.lblColumnForDisplay.Size = new System.Drawing.Size(113, 12);
             this.lblColumnForDisplay.TabIndex = 39;
@@ -239,16 +253,16 @@
             // 
             this.clbColumnForDisplay.FormattingEnabled = true;
             this.clbColumnForDisplay.HorizontalScrollbar = true;
-            this.clbColumnForDisplay.Location = new System.Drawing.Point(27, 330);
+            this.clbColumnForDisplay.Location = new System.Drawing.Point(6, 73);
             this.clbColumnForDisplay.Name = "clbColumnForDisplay";
             this.clbColumnForDisplay.Size = new System.Drawing.Size(243, 148);
             this.clbColumnForDisplay.TabIndex = 38;
             // 
             // btnDownload
             // 
-            this.btnDownload.Location = new System.Drawing.Point(1054, 187);
+            this.btnDownload.Location = new System.Drawing.Point(136, 162);
             this.btnDownload.Name = "btnDownload";
-            this.btnDownload.Size = new System.Drawing.Size(116, 43);
+            this.btnDownload.Size = new System.Drawing.Size(111, 43);
             this.btnDownload.TabIndex = 43;
             this.btnDownload.Text = "导 出 Excel";
             this.btnDownload.UseVisualStyleBackColor = true;
@@ -257,19 +271,19 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 38);
+            this.label5.Location = new System.Drawing.Point(6, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 12);
+            this.label5.Size = new System.Drawing.Size(71, 12);
             this.label5.TabIndex = 47;
-            this.label5.Text = "表 名-字 段：";
+            this.label5.Text = "表名-字段：";
             // 
             // cboField
             // 
             this.cboField.DropDownWidth = 364;
             this.cboField.FormattingEnabled = true;
-            this.cboField.Location = new System.Drawing.Point(99, 35);
+            this.cboField.Location = new System.Drawing.Point(80, 14);
             this.cboField.Name = "cboField";
-            this.cboField.Size = new System.Drawing.Size(264, 20);
+            this.cboField.Size = new System.Drawing.Size(156, 20);
             this.cboField.TabIndex = 48;
             this.cboField.Text = "[\'01环境和一般事故数据$\'].[(SGDABH)案例编号]";
             this.cboField.SelectedIndexChanged += new System.EventHandler(this.cboField_SelectedIndexChanged);
@@ -278,7 +292,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(286, 624);
+            this.label6.Location = new System.Drawing.Point(6, 392);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 49;
@@ -286,7 +300,7 @@
             // 
             // txtAveVal
             // 
-            this.txtAveVal.Location = new System.Drawing.Point(339, 621);
+            this.txtAveVal.Location = new System.Drawing.Point(59, 389);
             this.txtAveVal.Name = "txtAveVal";
             this.txtAveVal.Size = new System.Drawing.Size(100, 21);
             this.txtAveVal.TabIndex = 50;
@@ -294,7 +308,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(456, 624);
+            this.label7.Location = new System.Drawing.Point(176, 392);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 12);
             this.label7.TabIndex = 51;
@@ -302,7 +316,7 @@
             // 
             // txtMaxVal
             // 
-            this.txtMaxVal.Location = new System.Drawing.Point(503, 621);
+            this.txtMaxVal.Location = new System.Drawing.Point(223, 389);
             this.txtMaxVal.Name = "txtMaxVal";
             this.txtMaxVal.Size = new System.Drawing.Size(100, 21);
             this.txtMaxVal.TabIndex = 52;
@@ -310,7 +324,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(621, 624);
+            this.label8.Location = new System.Drawing.Point(341, 392);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 53;
@@ -318,7 +332,7 @@
             // 
             // txtMinVal
             // 
-            this.txtMinVal.Location = new System.Drawing.Point(668, 621);
+            this.txtMinVal.Location = new System.Drawing.Point(388, 389);
             this.txtMinVal.Name = "txtMinVal";
             this.txtMinVal.Size = new System.Drawing.Size(100, 21);
             this.txtMinVal.TabIndex = 54;
@@ -326,7 +340,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(788, 624);
+            this.label9.Location = new System.Drawing.Point(508, 392);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 12);
             this.label9.TabIndex = 55;
@@ -334,7 +348,7 @@
             // 
             // txtMiddleVal
             // 
-            this.txtMiddleVal.Location = new System.Drawing.Point(847, 621);
+            this.txtMiddleVal.Location = new System.Drawing.Point(567, 389);
             this.txtMiddleVal.Name = "txtMiddleVal";
             this.txtMiddleVal.Size = new System.Drawing.Size(100, 21);
             this.txtMiddleVal.TabIndex = 56;
@@ -342,7 +356,7 @@
             // dgvDataDistribution
             // 
             this.dgvDataDistribution.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDataDistribution.Location = new System.Drawing.Point(993, 245);
+            this.dgvDataDistribution.Location = new System.Drawing.Point(993, 252);
             this.dgvDataDistribution.Name = "dgvDataDistribution";
             this.dgvDataDistribution.RowTemplate.Height = 23;
             this.dgvDataDistribution.Size = new System.Drawing.Size(193, 362);
@@ -351,7 +365,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(927, 25);
+            this.label2.Location = new System.Drawing.Point(8, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 12);
             this.label2.TabIndex = 59;
@@ -359,7 +373,7 @@
             // 
             // tbCurrentName
             // 
-            this.tbCurrentName.Location = new System.Drawing.Point(1010, 22);
+            this.tbCurrentName.Location = new System.Drawing.Point(91, 13);
             this.tbCurrentName.Name = "tbCurrentName";
             this.tbCurrentName.Size = new System.Drawing.Size(156, 21);
             this.tbCurrentName.TabIndex = 60;
@@ -368,7 +382,7 @@
             // 
             this.cboForDisplay.DropDownWidth = 400;
             this.cboForDisplay.FormattingEnabled = true;
-            this.cboForDisplay.Location = new System.Drawing.Point(99, 252);
+            this.cboForDisplay.Location = new System.Drawing.Point(77, 14);
             this.cboForDisplay.Name = "cboForDisplay";
             this.cboForDisplay.Size = new System.Drawing.Size(156, 20);
             this.cboForDisplay.TabIndex = 63;
@@ -377,7 +391,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 255);
+            this.label1.Location = new System.Drawing.Point(6, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 62;
@@ -385,7 +399,7 @@
             // 
             // btnChooseField
             // 
-            this.btnChooseField.Location = new System.Drawing.Point(206, 290);
+            this.btnChooseField.Location = new System.Drawing.Point(188, 44);
             this.btnChooseField.Name = "btnChooseField";
             this.btnChooseField.Size = new System.Drawing.Size(53, 23);
             this.btnChooseField.TabIndex = 64;
@@ -395,7 +409,7 @@
             // 
             // btnOutputAL
             // 
-            this.btnOutputAL.Location = new System.Drawing.Point(925, 61);
+            this.btnOutputAL.Location = new System.Drawing.Point(6, 40);
             this.btnOutputAL.Name = "btnOutputAL";
             this.btnOutputAL.Size = new System.Drawing.Size(106, 32);
             this.btnOutputAL.TabIndex = 65;
@@ -405,7 +419,7 @@
             // 
             // btnInputAL
             // 
-            this.btnInputAL.Location = new System.Drawing.Point(1054, 61);
+            this.btnInputAL.Location = new System.Drawing.Point(135, 40);
             this.btnInputAL.Name = "btnInputAL";
             this.btnInputAL.Size = new System.Drawing.Size(106, 32);
             this.btnInputAL.TabIndex = 66;
@@ -415,7 +429,7 @@
             // 
             // btnInputRY
             // 
-            this.btnInputRY.Location = new System.Drawing.Point(1054, 99);
+            this.btnInputRY.Location = new System.Drawing.Point(135, 78);
             this.btnInputRY.Name = "btnInputRY";
             this.btnInputRY.Size = new System.Drawing.Size(106, 32);
             this.btnInputRY.TabIndex = 68;
@@ -425,7 +439,7 @@
             // 
             // btnOutputRY
             // 
-            this.btnOutputRY.Location = new System.Drawing.Point(925, 99);
+            this.btnOutputRY.Location = new System.Drawing.Point(6, 78);
             this.btnOutputRY.Name = "btnOutputRY";
             this.btnOutputRY.Size = new System.Drawing.Size(106, 32);
             this.btnOutputRY.TabIndex = 67;
@@ -435,7 +449,7 @@
             // 
             // btnInputCYF
             // 
-            this.btnInputCYF.Location = new System.Drawing.Point(1054, 137);
+            this.btnInputCYF.Location = new System.Drawing.Point(135, 116);
             this.btnInputCYF.Name = "btnInputCYF";
             this.btnInputCYF.Size = new System.Drawing.Size(112, 32);
             this.btnInputCYF.TabIndex = 70;
@@ -445,7 +459,7 @@
             // 
             // btnOutputCYF
             // 
-            this.btnOutputCYF.Location = new System.Drawing.Point(925, 137);
+            this.btnOutputCYF.Location = new System.Drawing.Point(6, 116);
             this.btnOutputCYF.Name = "btnOutputCYF";
             this.btnOutputCYF.Size = new System.Drawing.Size(112, 32);
             this.btnOutputCYF.TabIndex = 71;
@@ -455,66 +469,152 @@
             // 
             // btnAccidentType
             // 
-            this.btnAccidentType.Location = new System.Drawing.Point(925, 187);
+            this.btnAccidentType.Location = new System.Drawing.Point(6, 162);
             this.btnAccidentType.Name = "btnAccidentType";
-            this.btnAccidentType.Size = new System.Drawing.Size(116, 43);
+            this.btnAccidentType.Size = new System.Drawing.Size(106, 43);
             this.btnAccidentType.TabIndex = 72;
             this.btnAccidentType.Text = "生成事故类型";
             this.btnAccidentType.UseVisualStyleBackColor = true;
             this.btnAccidentType.Click += new System.EventHandler(this.btnAccidentType_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Lavender;
+            this.groupBox1.Controls.Add(this.cboField);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.lblAccidentType);
+            this.groupBox1.Controls.Add(this.cboAccidentType);
+            this.groupBox1.Controls.Add(this.btnMulti);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.cboSearchType);
+            this.groupBox1.Controls.Add(this.txtSearchType);
+            this.groupBox1.Controls.Add(this.lblSearchType);
+            this.groupBox1.Controls.Add(this.btnAddCondition);
+            this.groupBox1.Controls.Add(this.btnSearch);
+            this.groupBox1.Location = new System.Drawing.Point(19, 21);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(369, 166);
+            this.groupBox1.TabIndex = 73;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "查询输入";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Lavender;
+            this.groupBox2.Controls.Add(this.btnChooseField);
+            this.groupBox2.Controls.Add(this.cboForDisplay);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.cbSelectAllColumns);
+            this.groupBox2.Controls.Add(this.lblColumnForDisplay);
+            this.groupBox2.Controls.Add(this.clbColumnForDisplay);
+            this.groupBox2.Location = new System.Drawing.Point(18, 197);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(258, 234);
+            this.groupBox2.TabIndex = 74;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "查询输出选项选择";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Lavender;
+            this.groupBox3.Controls.Add(this.btnAccidentType);
+            this.groupBox3.Controls.Add(this.btnOutputCYF);
+            this.groupBox3.Controls.Add(this.btnInputCYF);
+            this.groupBox3.Controls.Add(this.btnInputRY);
+            this.groupBox3.Controls.Add(this.btnOutputRY);
+            this.groupBox3.Controls.Add(this.btnInputAL);
+            this.groupBox3.Controls.Add(this.btnOutputAL);
+            this.groupBox3.Controls.Add(this.tbCurrentName);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.btnDownload);
+            this.groupBox3.Location = new System.Drawing.Point(18, 446);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(254, 211);
+            this.groupBox3.TabIndex = 75;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "导入导出选项";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Lavender;
+            this.groupBox4.Controls.Add(this.btnDeleteCondition);
+            this.groupBox4.Controls.Add(this.cbSelectAllConditions);
+            this.groupBox4.Controls.Add(this.btnClearConditions);
+            this.groupBox4.Controls.Add(this.lblCondition);
+            this.groupBox4.Controls.Add(this.clbConditions);
+            this.groupBox4.Location = new System.Drawing.Point(402, 12);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(585, 219);
+            this.groupBox4.TabIndex = 76;
+            this.groupBox4.TabStop = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.Lavender;
+            this.groupBox5.Controls.Add(this.txtMiddleVal);
+            this.groupBox5.Controls.Add(this.label9);
+            this.groupBox5.Controls.Add(this.txtMinVal);
+            this.groupBox5.Controls.Add(this.label8);
+            this.groupBox5.Controls.Add(this.txtMaxVal);
+            this.groupBox5.Controls.Add(this.label7);
+            this.groupBox5.Controls.Add(this.txtAveVal);
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.dgvCars);
+            this.groupBox5.Location = new System.Drawing.Point(280, 232);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(707, 418);
+            this.groupBox5.TabIndex = 77;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "查询输出显示";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(993, 234);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 12);
+            this.label3.TabIndex = 78;
+            this.label3.Text = "分类统计：";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(993, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 202);
+            this.pictureBox1.TabIndex = 79;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1198, 654);
-            this.Controls.Add(this.btnAccidentType);
-            this.Controls.Add(this.btnOutputCYF);
-            this.Controls.Add(this.btnInputCYF);
-            this.Controls.Add(this.btnInputRY);
-            this.Controls.Add(this.btnOutputRY);
-            this.Controls.Add(this.btnInputAL);
-            this.Controls.Add(this.btnOutputAL);
-            this.Controls.Add(this.btnChooseField);
-            this.Controls.Add(this.cboForDisplay);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbCurrentName);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1198, 673);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvDataDistribution);
-            this.Controls.Add(this.txtMiddleVal);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtMinVal);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtMaxVal);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtAveVal);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.cboField);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnDownload);
-            this.Controls.Add(this.cbSelectAllColumns);
-            this.Controls.Add(this.lblColumnForDisplay);
-            this.Controls.Add(this.clbColumnForDisplay);
-            this.Controls.Add(this.btnDeleteCondition);
-            this.Controls.Add(this.cbSelectAllConditions);
-            this.Controls.Add(this.btnClearConditions);
-            this.Controls.Add(this.lblCondition);
-            this.Controls.Add(this.lblAccidentType);
-            this.Controls.Add(this.cboAccidentType);
-            this.Controls.Add(this.btnMulti);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.cboSearchType);
-            this.Controls.Add(this.txtSearchType);
-            this.Controls.Add(this.lblSearchType);
-            this.Controls.Add(this.btnAddCondition);
-            this.Controls.Add(this.clbConditions);
-            this.Controls.Add(this.dgvCars);
-            this.Controls.Add(this.btnSearch);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.Text = "交通事故查询系统";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataDistribution)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -564,6 +664,13 @@
         private System.Windows.Forms.Button btnInputCYF;
         private System.Windows.Forms.Button btnOutputCYF;
         private System.Windows.Forms.Button btnAccidentType;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -68,11 +68,17 @@ namespace 上汽项目
 
         private void Login_Load()
         { 
+            // 添加权限管理
             //string[] UserType = {"一般用户", "管理员"};
             //foreach (string ut in UserType)
             //{
             //    cboUserType.Items.Add(ut);
             //}
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

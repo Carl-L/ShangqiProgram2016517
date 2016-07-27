@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.btnSearch = new System.Windows.Forms.Button();
             this.dgvCars = new System.Windows.Forms.DataGridView();
             this.clbConditions = new System.Windows.Forms.CheckedListBox();
             this.btnAddCondition = new System.Windows.Forms.Button();
@@ -76,6 +75,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtMeanVal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars)).BeginInit();
@@ -87,16 +87,6 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(255, 53);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(104, 42);
-            this.btnSearch.TabIndex = 0;
-            this.btnSearch.Text = "搜 索";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgvCars
             // 
@@ -119,7 +109,7 @@
             // 
             // btnAddCondition
             // 
-            this.btnAddCondition.Location = new System.Drawing.Point(255, 7);
+            this.btnAddCondition.Location = new System.Drawing.Point(255, 33);
             this.btnAddCondition.Name = "btnAddCondition";
             this.btnAddCondition.Size = new System.Drawing.Size(104, 32);
             this.btnAddCondition.TabIndex = 11;
@@ -162,9 +152,9 @@
             // 
             // btnMulti
             // 
-            this.btnMulti.Location = new System.Drawing.Point(255, 109);
+            this.btnMulti.Location = new System.Drawing.Point(255, 86);
             this.btnMulti.Name = "btnMulti";
-            this.btnMulti.Size = new System.Drawing.Size(104, 52);
+            this.btnMulti.Size = new System.Drawing.Size(104, 55);
             this.btnMulti.TabIndex = 17;
             this.btnMulti.Text = "多条件搜索";
             this.btnMulti.UseVisualStyleBackColor = true;
@@ -292,7 +282,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 392);
+            this.label6.Location = new System.Drawing.Point(137, 391);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 49;
@@ -300,15 +290,15 @@
             // 
             // txtAveVal
             // 
-            this.txtAveVal.Location = new System.Drawing.Point(59, 389);
+            this.txtAveVal.Location = new System.Drawing.Point(190, 388);
             this.txtAveVal.Name = "txtAveVal";
-            this.txtAveVal.Size = new System.Drawing.Size(100, 21);
+            this.txtAveVal.Size = new System.Drawing.Size(89, 21);
             this.txtAveVal.TabIndex = 50;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(176, 392);
+            this.label7.Location = new System.Drawing.Point(285, 392);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 12);
             this.label7.TabIndex = 51;
@@ -316,15 +306,15 @@
             // 
             // txtMaxVal
             // 
-            this.txtMaxVal.Location = new System.Drawing.Point(223, 389);
+            this.txtMaxVal.Location = new System.Drawing.Point(332, 389);
             this.txtMaxVal.Name = "txtMaxVal";
-            this.txtMaxVal.Size = new System.Drawing.Size(100, 21);
+            this.txtMaxVal.Size = new System.Drawing.Size(84, 21);
             this.txtMaxVal.TabIndex = 52;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(341, 392);
+            this.label8.Location = new System.Drawing.Point(422, 392);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 53;
@@ -332,15 +322,15 @@
             // 
             // txtMinVal
             // 
-            this.txtMinVal.Location = new System.Drawing.Point(388, 389);
+            this.txtMinVal.Location = new System.Drawing.Point(469, 389);
             this.txtMinVal.Name = "txtMinVal";
-            this.txtMinVal.Size = new System.Drawing.Size(100, 21);
+            this.txtMinVal.Size = new System.Drawing.Size(84, 21);
             this.txtMinVal.TabIndex = 54;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(508, 392);
+            this.label9.Location = new System.Drawing.Point(559, 392);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 12);
             this.label9.TabIndex = 55;
@@ -348,9 +338,9 @@
             // 
             // txtMiddleVal
             // 
-            this.txtMiddleVal.Location = new System.Drawing.Point(567, 389);
+            this.txtMiddleVal.Location = new System.Drawing.Point(608, 389);
             this.txtMiddleVal.Name = "txtMiddleVal";
-            this.txtMiddleVal.Size = new System.Drawing.Size(100, 21);
+            this.txtMiddleVal.Size = new System.Drawing.Size(93, 21);
             this.txtMiddleVal.TabIndex = 56;
             // 
             // dgvDataDistribution
@@ -490,7 +480,6 @@
             this.groupBox1.Controls.Add(this.txtSearchType);
             this.groupBox1.Controls.Add(this.lblSearchType);
             this.groupBox1.Controls.Add(this.btnAddCondition);
-            this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Location = new System.Drawing.Point(19, 21);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(369, 166);
@@ -551,6 +540,7 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Lavender;
+            this.groupBox5.Controls.Add(this.txtMeanVal);
             this.groupBox5.Controls.Add(this.txtMiddleVal);
             this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Controls.Add(this.txtMinVal);
@@ -566,6 +556,14 @@
             this.groupBox5.TabIndex = 77;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "查询输出显示";
+            // 
+            // txtMeanVal
+            // 
+            this.txtMeanVal.Location = new System.Drawing.Point(9, 388);
+            this.txtMeanVal.Name = "txtMeanVal";
+            this.txtMeanVal.ReadOnly = true;
+            this.txtMeanVal.Size = new System.Drawing.Size(122, 21);
+            this.txtMeanVal.TabIndex = 73;
             // 
             // label3
             // 
@@ -622,7 +620,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvCars;
         private System.Windows.Forms.CheckedListBox clbConditions;
         private System.Windows.Forms.Button btnAddCondition;
@@ -671,6 +668,7 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtMeanVal;
     }
 }
 

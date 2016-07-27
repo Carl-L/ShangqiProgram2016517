@@ -121,62 +121,6 @@ namespace 上汽项目
             //MessageBox.Show(cyfbh_tableList_stable.Count.ToString());
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            string tf;
-            if (cboField.SelectedIndex == -1)
-            {
-                tf = cboField.Text.ToString();
-            }
-            else
-            {
-                tf = cboField.SelectedItem.ToString();
-            }
-            
-            string[] tmpList = tf.Split(new string[] { "." }, StringSplitOptions.RemoveEmptyEntries);
-            string table = tmpList[0];
-            string cateId = tmpList[1];
-            string searchType_cbo = "";
-            string searchTxt = "";
-            if (cboSearchType.SelectedIndex != -1)
-            {
-                searchType_cbo = cboSearchType.SelectedItem.ToString();
-                searchTxt = txtSearchType.Text.Trim(); // 单值查询 多值查询 范围查询
-            }
-
-            string sqlStr = "select * from " + table + " where " + table + ".[(SGDABH)案例编号] in (" + accTypeStr + ")";
-
-            if (!string.IsNullOrEmpty(searchTxt))
-            {
-                if (searchType_cbo == searchType[0])
-                {
-                    sqlStr += " and " + cateId + "='" + searchTxt + "'";
-                }
-                else if (searchType_cbo == searchType[1])
-                {
-                    string lang = "";
-                    string[] strList = searchTxt.Split(new string[] { "or" }, StringSplitOptions.RemoveEmptyEntries);
-                    int i = 0;
-                    for (; i < strList.Length - 1; i++)
-                    {
-                        lang += cateId + "='" + strList[i] + "' or ";
-                    }
-                    lang += cateId + "='" + strList[i] + "'";
-                    sqlStr += " and " + lang;
-                }
-                else if (searchType_cbo == searchType[2])
-                {
-                    string lang = "";
-                    string[] strList = searchTxt.Split(new string[] { "to" }, StringSplitOptions.RemoveEmptyEntries);
-                    lang += " and " + tf + " between '" + strList[0] + "' and '" + strList[1] + "'";
-                    sqlStr += lang;
-                }
-            }
-            DataTable dt = SqlHelper.ExecuteDataTable(sqlStr);
-            dgvCars.AllowUserToAddRows = false;
-            dgvCars.DataSource = dt;
-        }
-
         // 添加检索条件
         private void btnAddCondition_Click(object sender, EventArgs e)
         {
@@ -245,8 +189,11 @@ namespace 上汽项目
         // 多条件筛选
         private void btnMulti_Click(object sender, EventArgs e)
         {
+            // 人员编号
             List<string> rybh_tableList = new List<string>();
+            // 案例编号
             List<string> albh_tableList = new List<string>();
+            // 参与方编号
             List<string> cyfbh_tableList = new List<string>();
             // tableList用于存储表名
             List<string> tableList = new List<string>();
@@ -268,7 +215,7 @@ namespace 上汽项目
                 {
                     userSelectedField += "," + itemName;
                 }
-            } 
+            }
             #endregion
 
             string sqlStr = "";
@@ -285,7 +232,7 @@ namespace 上汽项目
             string table_list_tmp = "";
             foreach (string itemName in clbConditions.CheckedItems)
             {
-                string[] itemArray = itemName.Split(new char[1]{'.'}); // 搜索类型 表名 字段名 条件
+                string[] itemArray = itemName.Split(new char[1] { '.' }); // 搜索类型 表名 字段名 条件
                 table = itemArray[1];
                 // 如果tableList中没有当前表名，则加入
                 if (!tableList.Contains(itemArray[1]))
@@ -297,6 +244,7 @@ namespace 上汽项目
                     }
                     else
                     {
+                        tableList.Add(itemArray[1]);
                         table_list_tmp += ", " + itemArray[1];
                     }
                     // 判断含有相应字段的表
@@ -308,13 +256,19 @@ namespace 上汽项目
                     }
                     if (albh_tableList_stable.Contains(itemArray[1]))
                     {
+                        //if (!albh_tableList.Contains(itemArray[1]))
+                        //{
                         albh_tableList.Add(itemArray[1]);
                         albh_str_tmp = itemArray[1];
+                        //}
                     }
                     if (cyfbh_tableList_stable.Contains(itemArray[1]))
                     {
+                        //if (!cyfbh_tableList.Contains(itemArray[1]))
+                        //{
                         cyfbh_tableList.Add(itemArray[1]);
                         cyfbh_str_tmp = itemArray[1];
+                        //}
                     }
 
                 }
@@ -366,11 +320,11 @@ namespace 上汽项目
             string prime_key_join = "";
             if (rybh_tableList.Count > 1)
             {
-                for (int i = 1; i < rybh_tableList.Count; i++ )
+                for (int i = 1; i < rybh_tableList.Count; i++)
                 {
                     if (prime_key_join.Length == 0)
                     {
-                        prime_key_join = rybh_tableList[i-1] + ".[(RYBH)人员编号]=" + rybh_tableList[i] + ".[(RYBH)人员编号]";
+                        prime_key_join = rybh_tableList[i - 1] + ".[(RYBH)人员编号]=" + rybh_tableList[i] + ".[(RYBH)人员编号]";
                     }
                     else
                     {
@@ -829,6 +783,7 @@ namespace 上汽项目
             string colName = dgvCars.Columns[colIndex].HeaderText;
             //MessageBox.Show(colName);
             tbCurrentName.Text = colName;
+            txtMeanVal.Text = colName;
 
             // 获取行数
             int rowCount = dgvCars.Rows.Count;

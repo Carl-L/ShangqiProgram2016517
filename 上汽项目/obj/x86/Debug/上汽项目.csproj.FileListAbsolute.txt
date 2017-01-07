@@ -190,3 +190,22 @@ C:\Users\Administrator\Desktop\桌面\C# program\ShangqiProgram2016517\上汽项
 C:\Users\Administrator\Desktop\桌面\C# program\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.FormMain.resources
 C:\Users\Administrator\Desktop\桌面\C# program\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
 C:\Users\Administrator\Desktop\桌面\C# program\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.csproj.GenerateResource.Cache
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\上汽项目.exe.config
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.exe
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.pdb
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\上汽项目.exe
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\上汽项目.pdb
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\NPOI.dll
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\NPOI.xml
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\NPOI.OOXML.xml
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\bin\Debug\NPOI.OpenXml4Net.xml
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.FormChangePassword.resources
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.FormLogin.resources
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.FormMain.resources
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\ShangqiProgram2016517\上汽项目\obj\x86\Debug\上汽项目.csproj.GenerateResource.Cache
